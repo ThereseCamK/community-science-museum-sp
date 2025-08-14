@@ -12,10 +12,9 @@
     --poppins-font: 'Poppins', sans-serif;
     --page-headline-size-mobile: 32px;
     --page-headline-size-desktop: 40px;
-    --title-name-size-mobile: 20px;
+    --font-size-20: 20px;
     --title-name-size-desktop: 24px;
     --strd-txt-size-mobile: 15px;
-    --strd-txt-size-desktop: 20px;
     --small-txt-size-mobile: 12px;
     --small-txt-size-desktop: 16px;
     --nav-size: 32px;
@@ -87,12 +86,7 @@ header{
     grid-area: header;
     
 }
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
+
 /*navigation-bar*/
 .burger-menu{
     position: absolute;
@@ -175,6 +169,63 @@ nav {
     left: 70%;
     height: 72px;
     width: auto;
+}
+
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background-color: #e3e0e0;
+   
+}
+
+.footer-wrap{
+     display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:0.5fr 1fr 0.5fr 0.1fr;
+    grid-template-areas: 
+    'footer-header footer-header '
+    'footer-address footer-contact'
+    'footer-some footer-some'
+    'privacy privacy'
+    ;
+
+}
+.logo-footer{
+    height: 57px;
+    width: auto;
+    margin: 10px;
+}
+.footer-header{
+    font-size: var(--font-size-20);
+    grid-area: footer-header;
+}
+.footer-header p{
+  position: relative;
+  color: var(--blue-color);
+  left: 20%;
+  top: -70px;
+}
+.footer-address{
+    font-size: var(--small-txt-size-mobile);
+    grid-area: footer-address;
+}
+.maps-link{
+    font-size: 10px;
+}
+.contact-wrap{
+    font-size: var(--small-txt-size-mobile);
+    grid-area: footer-contact;
+}
+.some-wrap{
+    grid-area: footer-some;
+    padding-left: 30%;
+    
+}
+.privacy-link{
+  font-size: 10px;
+    grid-area: privacy
 }
 
 @media (min-width:750px){
