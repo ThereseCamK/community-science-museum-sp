@@ -194,6 +194,14 @@ main{
     grid-area: main;
     padding: 10px;
 }
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section{
+  padding-bottom: 40px;
+}
 
 
 
@@ -255,6 +263,7 @@ footer{
   font-size: 10px;
     grid-area: privacy
 }
+
 
 @media (min-width:750px){
 header{
