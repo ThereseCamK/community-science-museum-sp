@@ -202,19 +202,20 @@ main{
 footer{
     grid-area: footer;
     background-color: #e3e0e0;
+    padding: 10px;
    
 }
 
 .footer-wrap{
-     display:grid;
+    display:grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows:0.5fr 1fr 0.5fr 0.1fr;
+     grid-template-rows:1fr 1fr 1fr 1fr;
     grid-template-areas: 
     'footer-header footer-header '
     'footer-address footer-contact'
     'footer-some footer-some'
-    'privacy privacy'
-    ;
+    'privacy privacy';
+ 
 
 }
 .logo-footer{
@@ -225,27 +226,29 @@ footer{
 .footer-header{
     font-size: var(--font-size-20);
     grid-area: footer-header;
+   ;
 }
 .footer-header p{
-  position: relative;
+ 
   color: var(--blue-color);
-  left: 20%;
-  top: -70px;
+  
 }
 .footer-address{
-    font-size: var(--small-txt-size-mobile);
+    font-size: var(--font-size-12);
     grid-area: footer-address;
 }
 .maps-link{
     font-size: 10px;
 }
 .contact-wrap{
-    font-size: var(--small-txt-size-mobile);
+    font-size: var(--font-size-12);
     grid-area: footer-contact;
 }
 .some-wrap{
     grid-area: footer-some;
     padding-left: 30%;
+    padding-top: 5%;
+   
     
 }
 .privacy-link{
