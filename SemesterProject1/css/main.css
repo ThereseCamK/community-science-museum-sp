@@ -10,21 +10,20 @@
 :root{
     --baloo-font: 'Baloo', sans-serif;
     --poppins-font: 'Poppins', sans-serif;
-    --page-headline-size-mobile: 32px;
-    --page-headline-size-desktop: 40px;
+    --font-size-32: 32px;
+    --font-size-40: 40px;
+    --font-size-36: 36px;
     --font-size-20: 20px;
-    --title-name-size-desktop: 24px;
-    --strd-txt-size-mobile: 15px;
-    --small-txt-size-mobile: 12px;
-    --small-txt-size-desktop: 16px;
+    --font-size-24: 24px;
+    --font-size-15: 15px;
+    --font-size-12: 12px;
+    --font-size-16: 16px;
     --nav-size: 32px;
     --picture-frame-size: 3px;
     --txt-frame-size: 10px;
-    --frame-radius: 30%;
+    --frame-radius: 30px;
     --button-height-mobile: 43px;
     --button-height-desktop: 73px;
-    --button-font-size-mobile: 16px;
-    --button-font-size-desktop: 36px;
     --pink-color: #e16bc3;
     --blue-color: #02568f;
     --green-color: #06700a;
@@ -77,6 +76,24 @@ body{
 .dark-orange-color{
     color: var(--dark-orange-color);
 }
+
+.border-style-orange{
+    border: solid var(--orange-color) var(--picture-frame-size) ;
+    border-radius: var(--frame-radius);
+}
+.border-style-green{
+    border: solid var(--green-color) var(--picture-frame-size) ;
+    border-radius: var(--frame-radius);
+}
+
+.border-style-blue{
+    border: solid var(--blue-color) var(--picture-frame-size) ;
+    border-radius: var(--frame-radius);
+}
+
+
+
+
 
 header{
     position: sticky;
@@ -133,15 +150,15 @@ nav {
    
     
 }
-.first{
+.background-color-blue{
     background-color: var(--blue-color);
   
 }
-.second{
+.background-color-orange{
     background-color: var(--orange-color);
     
 }
-.third{
+.background-color-green{
     background-color: var(--green-color);
     
 }
@@ -171,9 +188,17 @@ nav {
     width: auto;
 }
 
+/*main*/
+
 main{
     grid-area: main;
+    padding: 10px;
 }
+
+
+
+
+/* footer */
 footer{
     grid-area: footer;
     background-color: #e3e0e0;
