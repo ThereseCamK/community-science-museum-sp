@@ -90,6 +90,40 @@ body{
     border: solid var(--blue-color) var(--picture-frame-size) ;
     border-radius: var(--frame-radius);
 }
+.thick-border-pink{
+    border: solid var(--pink-color) var(--txt-frame-size);
+}
+.thick-border-blue{
+    border: solid var(--blue-color) var(--txt-frame-size);
+}
+.thick-border-orange{
+    border: solid var(--orange-color) var(--txt-frame-size);
+}
+.thick-border-green{
+    border: solid var(--green-color) var(--txt-frame-size);
+}
+.thick-border-purple{
+    border: solid var(--purple-color) var(--txt-frame-size);
+}
+.section-picture{
+    width: 128px;
+    height: auto;
+    border-radius: var(--frame-radius);
+    padding: 10px;
+    margin-top:30px;
+}
+.common-border{
+    width: 90vw;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10%;
+}
+
+h1{
+    font-size: var(--font-size-32);
+    text-transform: uppercase;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--baloo-font);
+}
 
 
 

@@ -1,0 +1,96 @@
+.explore-header{
+    background-image: url("../images/lab-512503_1920.jpg");
+    background-size:cover;
+    background-repeat: none;
+    height: 153px;
+    width: 95vw;
+    border-radius: var(--frame-radius);
+    border:3px solid var(--orange-color); 
+}
+h1{
+    margin-top:0;
+    text-align: center;
+    background-image: radial-gradient(circle at center, #F9A824, #02568F, #39B16E);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color:black ;
+    -webkit-text-stroke-width:0.5px ;
+  
+}
+.explore-section{
+    position: relative;
+    max-width: 90vw;
+    margin: 0 auto;
+
+}
+.explore-section img{
+    vertical-align: middle;
+    opacity: 0.2;
+    height: 650px;
+    max-width: 90vw;
+}
+
+.explore-section .explore-section-txt{
+     position: absolute;
+    top: 0;
+    color: #050505;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+  
+}
+/* .explore-section-teacher{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.explore-section-teacher img{
+    vertical-align: center;
+    opacity: 0.5;
+    height: 650px;
+    width: auto;
+}
+
+.explore-section-teacher .explore-section-txt{
+     position: absolute;
+    top: 0;
+    color: #050505;
+    width: 100%;
+    padding: 20px;
+  
+} */
+/* .explore-img{
+    display: none;
+
+}
+.explore-section-kids{
+    background-image: url("../images/reading-2762010_1280.jpg");
+    opacity: 0.5;
+    background-size:cover;
+    height: 650px;
+    width: auto;
+       z-index: -1;
+
+}
+.explore-section-teacher{
+    background-image: url("../images/luke-ellis-craven-400722.jpg");
+    background-size:cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.explore-section-resrc{
+    background-image: url("../images/library-1132573_1920.jpg");
+    background-size:cover;
+    opacity: 0.5;
+    z-index: -1;
+} */
+
+.explore-section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-size-20);
+}
+.explore-section-info{
+    font-size: var(--font-size-15);
+}
