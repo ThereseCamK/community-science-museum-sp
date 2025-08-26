@@ -3,7 +3,7 @@
 .grid-section-header-visit{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1.5fr 2fr;
     grid-template-areas: 'header astro'
                         'ball location';
     max-width: 90vw;
@@ -18,13 +18,15 @@
 }
 .astronaut-img{
     grid-area: astro;
-    width: 185px;
+    max-width: 150px;
     height: auto;
+    margin-top: 10px;
 }
 .ball-img{
     grid-area: ball;
-    width: 200px;
+    width: 150px;
     height: auto;
+    margin-top: 20px;
 }
 .location-wrapper{
     grid-area: location;
