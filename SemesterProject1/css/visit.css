@@ -102,7 +102,7 @@ h4{
 }
 
 .sceleton-img{
-    width: 387px;
+    max-width: 90vw;
     height: auto;
 }
 
