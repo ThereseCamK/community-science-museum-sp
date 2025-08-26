@@ -1,0 +1,12 @@
+.main-page-header{
+    text-align: center;
+
+}
+.main-page-header::first-letter{
+    color: var(--red-color)
+}
+
+.img-involved{
+    width: 95vw;
+    height: auto;
+}

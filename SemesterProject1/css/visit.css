@@ -1,0 +1,108 @@
+
+
+.grid-section-header-visit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'header astro'
+                        'ball location';
+    max-width: 90vw;
+   
+}
+
+.main-page-header{
+    text-align: left;
+    color: var(--red-color);
+    grid-area: header;
+    
+}
+.astronaut-img{
+    grid-area: astro;
+    width: 185px;
+    height: auto;
+}
+.ball-img{
+    grid-area: ball;
+    width: 200px;
+    height: auto;
+}
+.location-wrapper{
+    grid-area: location;
+    padding: 10px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: var(--font-size-20);
+}
+address p{
+    font-size: var(--font-size-15);
+}
+
+.price-section-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 'price img'
+                        't-info t-info';
+    
+}
+.p-and-oh-wrap{
+    grid-area: price;
+    
+}
+ h3{
+    text-transform: uppercase;
+    font-size: var(--font-size-18);
+  
+}
+.toy-img{
+    grid-area: img;
+    width: 150px;
+    height: auto;
+}
+.tiny-info{
+    grid-area: t-info;
+    font-size: var(--font-size-12);
+}
+
+.opening-wrapper{
+    background-color: #d9d9d9;
+    width: 230px;
+    height: 215px;
+    border-radius: var(--frame-radius);
+    padding: 10px;
+}
+h4{
+    font-size: var(--font-size-16);
+    text-transform: uppercase;
+}
+.days{
+    font-size: var(--font-size-15);
+    line-height: 0.5;
+}
+
+.left-txt-wrap{
+    text-align: left;
+    max-width: 60vw;
+    margin-bottom: 50px;
+}
+.right-txt-wrap{
+    text-align: right;
+    padding-left: 30vw;
+    margin-bottom: 50px;
+    
+}
+.title{
+    text-transform: uppercase;
+    font-size: var(--font-size-15);
+}
+.info{
+    font-size: var(--font-size-14);
+}
+
+.sceleton-img{
+    width: 387px;
+    height: auto;
+}
+

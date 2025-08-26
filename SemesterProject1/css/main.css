@@ -17,7 +17,9 @@
     --font-size-24: 24px;
     --font-size-15: 15px;
     --font-size-12: 12px;
+    --font-size-14: 14px;
     --font-size-16: 16px;
+    --font-size-18: 18px;
     --nav-size: 32px;
     --picture-frame-size: 3px;
     --txt-frame-size: 10px;
@@ -94,6 +96,10 @@ body{
     border: solid var(--purple-color) var(--picture-frame-size) ;
     border-radius: var(--frame-radius);
 }
+.border-style-red{
+    border: solid var(--red-color) var(--picture-frame-size) ;
+    border-radius: var(--frame-radius);
+}
 .thick-border-pink{
     border: solid var(--pink-color) var(--txt-frame-size);
 }
@@ -146,12 +152,13 @@ h1{
     grid-area: title;
     text-transform: uppercase;
     font-size: var(--font-size-20);
+    text-align: center;
 }
 .section-info{
     grid-area: info;
     font-size: var(--font-size-15);
     overflow:scroll;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 
