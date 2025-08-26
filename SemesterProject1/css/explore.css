@@ -20,14 +20,16 @@ h1{
 .explore-section{
     position: relative;
     max-width: 90vw;
-    margin: 0 auto;
+    margin: 50px auto;
+    
 
 }
 .explore-section img{
     vertical-align: middle;
     opacity: 0.2;
-    height: 650px;
+    max-height: 650px;
     max-width: 90vw;
+    border-radius: var(--frame-radius);
 }
 
 .explore-section .explore-section-txt{
@@ -39,52 +41,7 @@ h1{
     z-index: 1;
   
 }
-/* .explore-section-teacher{
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
 
-}
-.explore-section-teacher img{
-    vertical-align: center;
-    opacity: 0.5;
-    height: 650px;
-    width: auto;
-}
-
-.explore-section-teacher .explore-section-txt{
-     position: absolute;
-    top: 0;
-    color: #050505;
-    width: 100%;
-    padding: 20px;
-  
-} */
-/* .explore-img{
-    display: none;
-
-}
-.explore-section-kids{
-    background-image: url("../images/reading-2762010_1280.jpg");
-    opacity: 0.5;
-    background-size:cover;
-    height: 650px;
-    width: auto;
-       z-index: -1;
-
-}
-.explore-section-teacher{
-    background-image: url("../images/luke-ellis-craven-400722.jpg");
-    background-size:cover;
-    opacity: 0.5;
-    z-index: -1;
-}
-.explore-section-resrc{
-    background-image: url("../images/library-1132573_1920.jpg");
-    background-size:cover;
-    opacity: 0.5;
-    z-index: -1;
-} */
 
 .explore-section-title{
     text-align: center;
@@ -93,4 +50,5 @@ h1{
 }
 .explore-section-info{
     font-size: var(--font-size-15);
+    width: 90%;
 }

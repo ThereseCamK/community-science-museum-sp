@@ -90,6 +90,10 @@ body{
     border: solid var(--blue-color) var(--picture-frame-size) ;
     border-radius: var(--frame-radius);
 }
+.border-style-purple{
+    border: solid var(--purple-color) var(--picture-frame-size) ;
+    border-radius: var(--frame-radius);
+}
 .thick-border-pink{
     border: solid var(--pink-color) var(--txt-frame-size);
 }
