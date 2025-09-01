@@ -127,6 +127,10 @@ body{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10%;
 }
+.btn-link{
+    text-decoration: none;
+    color:white;
+}
 
 h1{
     font-size: var(--font-size-32);
@@ -334,11 +338,16 @@ footer{
 }
 
 
+
 @media (min-width:750px){
-header{
-    height: 150px;
-  
-}
+    h1{
+    font-size: var(--font-size-40);
+   
+    }
+    header{
+        height: 150px;
+    
+    }
       nav,
     #hamburger-checkbox{
         display: none;
@@ -349,16 +358,19 @@ header{
         display: block;
         position: static;
         background-color: inherit;
-        margin-left:15%;
+        margin-left:0;
+        width: 100vw;
+        position: absolute;
+        bottom: -10%;
 
     }
 
     .navbar-item{
        
         display: inline-block;
-        padding: 50px 1%;
-        
-        
+        padding: 5px 1%;
+        font-size: var(--font-size-18);
+ 
     }
    
     .hamburger-icon{
@@ -371,13 +383,83 @@ header{
     left: 1%;
     height: 119px;
     width: auto;
+    }
+    .logo-txt{
+        position: absolute;
+        top:1.8%;
+        left: 11.5%;
+        height: 125px;
+        width: auto;
+    }
+
+    .footer-wrap{
+        
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 2fr 3fr 0.5fr;
+        grid-template-areas: 
+        'footer-header footer-header footer-header '
+        'footer-address footer-contact footer-some'
+        'privacy privacy privacy';
+    
+
+    }
+    .logo-footer{
+        height: 100px;
+    
+    }
+    .footer-header{
+        font-size: var(--font-size-32);
+    
+    ;
+    }
+
+    .footer-address{
+        font-size: var(--font-size-18);
+
+    }
+    .maps-link{
+        font-size: var(--font-size-14);
+    }
+    .contact-wrap{
+        font-size: var(--font-size-18);
+
+    }
+
+    .privacy-link{
+        padding-top: 30px;
+    }
+
+
+
+
 }
-.logo-txt{
-    position: absolute;
-    top:1.8%;
-    left: 5%;
-    height: 125px;
-    width: auto;
+
+@media (min-width:1000px) {
+      nav{   
+        position:absolute;
+        top: 40%;
+        left: 29%;
+        height: 50px;
+        width: 70vw;
+    }
+    .logo-txt{
+    left: 10.5%;
+    }
+
 }
+@media (min-width:1100px) {
+  
+       .navbar-item{
+        font-size: var(--font-size-20);
+    }
+
+    .grid-section{
+    height: 350px;    
+    width: 45%;
+ 
+}
+
+
+    
 
 }

@@ -5,4 +5,26 @@
 .main-page-header::first-letter{
     color: var(--orange-color)
 }
+@media (min-width:1300px){
+    .main-page-header{
+    position: relative;
+    left: 45%
+
+}
+
+    .grid-section{
+        width: 90%;
+    }
+    main{
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        
+    }
+
+    section:nth-child(2n){
+        grid-column:1; 
+
+    }
+}
 
