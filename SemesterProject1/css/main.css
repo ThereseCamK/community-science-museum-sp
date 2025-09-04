@@ -162,6 +162,7 @@ h1{
     grid-area: info;
     font-size: var(--font-size-15);
     overflow:scroll;
+
     padding: 15px;
 }
 
@@ -173,6 +174,8 @@ header{
     background-color: #d9d9d9;
     height: 80px;
     z-index: 2;
+    min-width: 100%;
+    top: 0px;
     grid-area: header;
     
 }
@@ -285,7 +288,7 @@ footer{
     background-color: #e3e0e0;
     padding: 10px;
     max-width: 100vw;
-   
+    
 }
 
 .logo-footer{
