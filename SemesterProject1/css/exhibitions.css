@@ -26,9 +26,7 @@
         grid-column:1; 
 
     }
-    .section-info::-webkit-scrollbar{
-        display: none;
-        
-    }
+   
+ 
 }
 

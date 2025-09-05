@@ -269,6 +269,7 @@ nav {
 main{
     grid-area: main;
     padding: 10px;
+
 }
 .flex-container{
     display: flex;
@@ -472,8 +473,26 @@ footer{
         width: 45%;
  
     }
+    .section-title{
+        font-size: var(--font-size-24)
+    }
+    .section-info{
+        font-size: var(--font-size-18);
+    }
+    .section-info::-webkit-scrollbar{
+        display: none;
+        
+    }
+    .navbar-item{
+        font-size: var(--font-size-24);
+    }
+   
+}
 
-
+@media (min-width:1400px) {
+    .section-picture{
+        height: auto;
+        width: 200px;
+    }
     
-
 }
