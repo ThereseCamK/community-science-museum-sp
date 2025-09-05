@@ -463,11 +463,10 @@ footer{
 
 }
 @media (min-width:1100px) {
-  
-    .navbar-item{
-        font-size: var(--font-size-20);
+    main{
+        margin: 0% 10%;
     }
-
+    
     .grid-section{
         height: 350px;    
         width: 45%;
@@ -484,12 +483,17 @@ footer{
         
     }
     .navbar-item{
-        font-size: var(--font-size-24);
+        font-size: var(--font-size-20);
     }
    
 }
 
 @media (min-width:1400px) {
+  
+    .navbar-item{
+        font-size: var(--font-size-24);
+    }
+
     .section-picture{
         height: auto;
         width: 200px;

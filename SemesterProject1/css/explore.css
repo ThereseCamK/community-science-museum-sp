@@ -135,6 +135,7 @@
     }
     .explore-section .explore-section-txt{
         width: 40vw;
+        top: -70px;
     }
     .explore-section .explore-section-txt:nth-child(odd){
         
@@ -146,6 +147,7 @@
         font-size: var(--font-size-32);
     }
     .explore-section-info{
+        
         font-size: var(--font-size-20);
         
     }
