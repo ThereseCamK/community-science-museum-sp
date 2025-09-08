@@ -86,8 +86,9 @@ h2{
     overflow: scroll;
 
 
-}
-
+}.back::-webkit-scrollbar {
+    display: none;
+  }
 .container-teacher {
     width: 350px;
     height: auto;
