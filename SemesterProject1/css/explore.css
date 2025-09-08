@@ -72,7 +72,7 @@ h2{
 
 .front-kids {
     
-    background-image: url('/SemesterProject1/images/reading-2762010_1280.jpg');
+    background-image: url('../images/reading-2762010_1280.jpg');
     background-size: cover; 
    
 }
@@ -121,7 +121,7 @@ h2{
 
 .front-teacher {
      padding: 10%;
-    background-image: url('/SemesterProject1/images/luke-ellis-craven-400722.jpg');
+    background-image: url('../images/luke-ellis-craven-400722.jpg');
     background-size: cover; 
 }
 
@@ -162,7 +162,7 @@ h2{
 
 .front-res {
     padding: 10%;
-    background-image: url('/SemesterProject1/images/library-1132573_1920.jpg');
+    background-image: url('../images/library-1132573_1920.jpg');
     background-size: cover;
     background-position: center; 
 }
