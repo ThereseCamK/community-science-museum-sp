@@ -25,16 +25,16 @@ h2{
 }
 
 /*cards*/
-@media (min-width: 400px){
+@media (min-width: 350px){
 .cards{
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 0%;
     
     
 }
 .container{
-    left:40%;
+    left:0%;
     perspective: 800px;
     margin-bottom: 10%;
     
@@ -86,7 +86,9 @@ h2{
     overflow: scroll;
 
 
-}.back::-webkit-scrollbar {
+
+}
+.back::-webkit-scrollbar {
     display: none;
   }
 .container-teacher {
@@ -214,15 +216,15 @@ footer{
     }
     .front-teacher,
     .back-teacher {
-         left: 40%;
+    left: 40%;
     height: 100%;
     width: 100%;  
     }
      .front-kids,
     .back-kids {
-    left: 40%;
-    height: 100%;
-    width: 100%;  
+    left: 20%;
+    min-height: 530px;
+    min-width: 90%;  
     }
 
 }
@@ -258,9 +260,9 @@ footer{
     }
      .front-kids,
     .back-kids {
-    height: 100%;
-    width: 80%;  
-     left: 0%;
+        height: 100%;
+         min-width: 90%; 
+        left: 0%;
     }
       .card-res {
       left: 0%;
