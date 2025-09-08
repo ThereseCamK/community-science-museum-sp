@@ -66,6 +66,7 @@
 
 .opening-wrapper{
     background-color: #d9d9d9;
+    color: black;
     width: 303px;
     height: 305px;
     border-radius: var(--frame-radius);

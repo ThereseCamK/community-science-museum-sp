@@ -55,6 +55,8 @@ body{
     'header header header'
     'main main main'
     'footer footer footer';
+    background-color: black;
+    color:white;
 }
 
 /*common-styles*/
@@ -141,7 +143,7 @@ h1{
 }
 
 .grid-section{
-    height: 240px;    
+    height: 340px;    
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -509,4 +511,13 @@ footer{
         width: 200px;
     }
     
+}
+
+@media (max-width: 350px) {
+   .home-page-picture1, .home-page-picture2, .home-page-picture3, .section-picture, .grid-pic{
+     display: none;
+   }
+ 
+
+   
 }
