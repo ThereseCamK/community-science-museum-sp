@@ -280,6 +280,7 @@ main{
 .flex-container{
     display: flex;
     flex-direction: row;
+    padding-right:  0;
 }
 
 .main-section{

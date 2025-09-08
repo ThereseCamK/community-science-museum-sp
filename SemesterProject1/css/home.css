@@ -15,7 +15,7 @@
 .home-page-picture3{
     width: 170px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 20%;
   
 }
 
@@ -31,6 +31,7 @@
     font-size: var(--font-size-20);
     font-family: var(--poppins-font);
     font-weight: 100;
+    max-width: 70vw;
    
 }
 .p{
@@ -41,11 +42,12 @@
 .home-page-first-p{
    
     width: 170px;
-
+    margin-left: 10%;
 }
 .home-page-second-p{
     width: 170px;
-    color: black;
+    color: white;
+    
 
 }
 
@@ -88,6 +90,7 @@ h4{
 
 
 
+
 @media (min-width:600px) {
 
 .home-page-picture1{
@@ -126,7 +129,7 @@ h4{
 }
 .home-page-second-p{
      width: 50%;
-    color: black;
+    color: white;
      font-size: var(--font-size-20);
 
 }
