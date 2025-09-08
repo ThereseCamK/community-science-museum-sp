@@ -149,6 +149,9 @@ h1{
                             'img info'
                             'img info';
 }
+p{
+    font-family: var(--poppins-font);
+}
 
 .grid-pic{
     grid-area: img;

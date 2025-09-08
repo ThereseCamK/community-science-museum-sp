@@ -53,6 +53,7 @@ h2{
     transition: transform 1500ms;
     transform-style: preserve-3d;
     margin-bottom: 50px;
+    
   
     
 
@@ -81,6 +82,8 @@ h2{
     max-width: 90%;
     transform: rotateY(180deg);
     gap: 5rem;
+    overflow: scroll;
+    
 
 }
 
