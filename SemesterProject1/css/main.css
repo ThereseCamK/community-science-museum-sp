@@ -161,7 +161,7 @@ h1{
 }
 .section-info{
     grid-area: info;
-    font-size: var(--font-size-15);
+    font-size: var(--font-size-18);
     overflow:scroll;
 
     padding: 15px;
@@ -340,6 +340,10 @@ footer{
 .privacy-link{
     font-size: 10px;
 
+}
+.some-wrap img{
+    height: auto;
+    width: 50px;
 }
 
 

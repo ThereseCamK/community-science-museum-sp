@@ -1,29 +1,25 @@
 
 
-.grid-section-header-visit{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1.5fr 2fr;
-    grid-template-areas: 'header astro'
-                        'ball location';
+.section-header-visit{
+
     max-width: 90vw;
-   
+   text-align: center;
 }
 
 .main-page-header{
-    text-align: left;
+    text-align: center;
     color: var(--red-color);
-    grid-area: header;
+   
     
 }
 .astronaut-img{
-    grid-area: astro;
-    max-width: 150px;
+  
+    max-width: 90%;
     height: auto;
     margin-top: 10px;
 }
 .ball-img{
-    grid-area: ball;
+    
     width: 150px;
     height: auto;
     margin-top: 20px;
@@ -40,40 +36,25 @@ address p{
     font-size: var(--font-size-15);
 }
 
-.price-section-grid{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: 'price img'
-                        't-info t-info';
-    
-}
-.p-and-oh-wrap{
-    grid-area: price;
-    
-}
+
+
  h3{
     text-transform: uppercase;
     font-size: var(--font-size-18);
+    text-align: center;
   
 }
-.toy-img{
-    grid-area: img;
-    width: 150px;
-    height: auto;
-}
-.tiny-info{
-    grid-area: t-info;
-    font-size: var(--font-size-12);
-}
+
+
 
 .opening-wrapper{
     background-color: #d9d9d9;
-    width: 230px;
+    max-width: 90%;
     height: 215px;
     border-radius: var(--frame-radius);
     padding: 10px;
+    text-align: center;
+    margin-top: 10%;
 }
 h4{
     font-size: var(--font-size-16);
@@ -109,46 +90,13 @@ h4{
 }
 
 @media (min-width:750px){
-    .grid-section-header-visit{
-        grid-template-columns: 1.5fr 1.5fr 2fr;
-        grid-template-rows: 1fr 3fr;
-        grid-template-areas: 'header header header'
-                            'ball location astro';
-    }
-    .price-section-grid{
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 2fr 0.1fr;
-        grid-template-areas: 'price img'
-                            't-info img';
-    }
-    .main-page-header{
-        text-align: center;
-    }
+   
+    
     .astronaut-img{
         max-width: 300px;
         height: auto;
     }
-   
-    .ball-img{
-        width: 200px;
-        height: auto;
-    }
-    .toy-img{
-        width: auto;
-        height: 330px;
-    }
-    .tiny-info{
-        position: relative;
-        top:-200px;
-    }
-    .left-txt-wrap:nth-child(-n+1){
-        text-align: right;
-        max-width: 90vw;
-        padding-left: 40%;
-        position: relative;
-        top:-200px;
-     
-    }
+
     .right-txt-wrap{
         text-align: left;
         padding-left: 0;
@@ -158,10 +106,11 @@ h4{
         max-width: 40vw;
     }
     .sceleton-img{
-        max-width: 40vw;
+        max-width: 30vw;
         position: relative;
         top:-300px;
         left: 50%;
+        margin-left: 10%;
     }
 
    
@@ -176,10 +125,7 @@ h4{
     .location-wrapper address{
         font-size: var(--font-size-20);
     }
-      .ball-img{
-        width: 300px;
-        
-    }
+
      .astronaut-img{
         max-width: 400px;
         height: auto;
@@ -197,12 +143,10 @@ h4{
         font-size: var(--font-size-18);
     }
   
-    .tiny-info{
-        font-size: var(--font-size-14);
-    }
+
     .opening-wrapper{
-       height: auto; 
-       max-width: 40vw;
+        height: 300px;
+        max-width: 100%;
     }
     .info{
     font-size: var(--font-size-18);
