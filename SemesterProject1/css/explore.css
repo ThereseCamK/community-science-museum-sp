@@ -1,13 +1,12 @@
 .explore-header{
     background-image: url("../images/lab-512503_1920.jpg");
     background-size:cover;
-    background-repeat: none;
     background-position: center;
     height: 153px;
     max-width: 90vw;
     border-radius: var(--frame-radius);
    
-    margin-bottom: 50px;
+   margin:10%;
     box-shadow: 0 0 5px 5px var(--orange-color);
 }
 .explore-header h1{
@@ -180,7 +179,7 @@ footer{
 
 
 
-@media (min-width:750px) {
+@media (min-width:650px) {
     .container h2{
         text-align: center;
     }
@@ -228,10 +227,10 @@ footer{
     }
 
 }
-@media (min-width:1100px) {
+@media (min-width:1000px) {
     .cards{
         flex-direction: row;
-        margin-left: 0%;
+        margin-left: -2%;
         max-width: 100%;  
     }
     .container-res {

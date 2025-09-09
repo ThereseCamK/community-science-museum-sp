@@ -6,27 +6,3 @@
     color: var(--green-color)
 }
 
-@media (min-width:1100px){
-
-    .grid-section:nth-child(odd){
-        position: relative;
-        left: 50%;
-        top: -200px;
-
-    }
-    .grid-section:nth-child(even):not(:first-of-type){
-        position: relative;
-        left:0;
-        top:-400px;
-        margin-bottom: -300px;
-    }
-    
-    .section-title{
-        font-size: var(--font-size-32);
-    }
-    .section-info{
-        font-size: var(--font-size-20);
-    }
-
-}
-

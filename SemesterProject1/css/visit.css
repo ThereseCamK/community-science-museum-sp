@@ -1,69 +1,36 @@
 
-
 .section-header-visit{
-
     max-width: 90vw;
    text-align: center;
 }
 
-.main-page-header{
-    text-align: center;
-    color: var(--red-color);
-   
-    
-}
+
 .astronaut-img{
   
     max-width: 90%;
     height: auto;
     margin-top: 10px;
 }
-.ball-img{
-    
-    width: 150px;
-    height: auto;
-    margin-top: 20px;
-}
-.location-wrapper{
-    grid-area: location;
-    padding: 10px;
-}
-h2{
-    text-transform: uppercase;
-    font-size: var(--font-size-20);
-}
-address p{
-    font-size: var(--font-size-15);
-}
 
-
-
- h3{
-    text-transform: uppercase;
-    font-size: var(--font-size-18);
-    text-align: center;
-  
-}
 
 
 
 .opening-wrapper{
     background-color: #d9d9d9;
-    color:black;
-    max-width: 90%;
-    height: 215px;
+    max-width: 100%;
+    height: 300px;
     border-radius: var(--frame-radius);
     padding: 10px;
     text-align: center;
-    margin-top: 10%;
+    margin: 10%;
 }
 h4{
     font-size: var(--font-size-16);
     text-transform: uppercase;
 }
 .days{
-    font-size: var(--font-size-15);
-    line-height: 0.5;
+   
+    line-height: 0.8;
 }
 
 .left-txt-wrap{
@@ -79,39 +46,38 @@ h4{
 }
 .title{
     text-transform: uppercase;
-    font-size: var(--font-size-15);
+    text-decoration: underline;
 }
-.info{
-    font-size: var(--font-size-14);
+.price-section{
+    margin: 5%;
+   }
+.info-wrap{
+    margin: 5%;
 }
 
 .sceleton-img{
-    max-width: 90vw;
+    max-width: 80vw;
     height: auto;
+    margin: 5%;
 }
 
 @media (min-width:750px){
-   
+    .price-section{
+        margin: 10%;
+    }
     
     .astronaut-img{
         max-width: 300px;
         height: auto;
     }
 
-    .right-txt-wrap{
-        text-align: left;
-        padding-left: 0;
-        max-width: 40vw;
+    .info-wrap{
+        margin: 10%;
     }
-    .left-txt-wrap{
-        max-width: 40vw;
-    }
-    .sceleton-img{
-        max-width: 30vw;
-        position: relative;
-        top:-300px;
-        left: 50%;
-        margin-left: 10%;
+       .opening-wrapper{
+        height: 350px;
+        max-width: 50%;
+        margin: 0% 20% 0% 20%;
     }
 
    
@@ -120,7 +86,7 @@ h4{
     p{
         font-size: var(--font-size-18);
     }
-     .location-wrapper h2{
+    .location-wrapper h2{
         font-size: 26px;
     }
     .location-wrapper address{
@@ -131,27 +97,13 @@ h4{
         max-width: 400px;
         height: auto;
     }
-    h3{
-       font-size: var(--font-size-24); 
-    }
-    h4{
-       font-size: var(--font-size-20); 
-    }
-    .title{
-        font-size: var(--font-size-20);
-    }
-    .days{
-        font-size: var(--font-size-18);
-    }
-  
 
-    .opening-wrapper{
-        height: 300px;
-        max-width: 100%;
+       .sceleton-img{
+        margin: 10%;
+        max-width: 60vw;
+     
     }
-    .info{
-    font-size: var(--font-size-18);
-}
+   
   
 
 }

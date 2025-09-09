@@ -1,28 +1,20 @@
 .main-page-header{
-   
     text-align: center;
-
 }
 .main-page-header::first-letter{
-    color: var(--dark-orange-color)
+    color: var(--dark-orange-color);
+     font-size: 3.5rem;
 }
+
 .bug-picture{
     max-width: 92vw;
-    max-height: auto;
+    height: 300px;
     margin-left: 0;
+    background-image: url('../images/genoa-956405_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
-}
-h2, h3, h4{
-    text-transform: uppercase;
-}
-
-h2{
-    font-family: poppins;
-    font-size: var(--font-size-20);
-}
-h3{
-    text-align: center;
-}
 main p{
     margin: 50px 0px;
 }
@@ -51,7 +43,7 @@ main p{
 .button-style:hover{
     background-color: black;
     box-shadow: inset 5px 5px 5px var(--purple-color);
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .opening-wrapper{
     background-color: #d9d9d9;
@@ -75,10 +67,10 @@ main p{
     }
     .first-div-wrapper, .second-div-wrapper{
         max-width: 40vw;
-        margin: 3%;
+        margin: 0 3%;
     }
     .first-div-wrapper p, .second-div-wrapper p{
-        min-height: 200px;
+        min-height: 250px;
         
     }
     .mammoth-picture{
@@ -91,9 +83,18 @@ main p{
     }
     .button-style{
         max-width: 40vw;
+        min-height: 50px;
+        font-size: 1.2rem;
         margin-left: 0;
     }
+    .bug-picture{
+        width: 85vw;
+        
 
+    }
+    .price-wrapper p{
+        margin: 3%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -103,8 +104,30 @@ main p{
         margin-left: 20%;
     }
     .bug-picture{
-        width: 85vw;
-        
-
+        width: 75vw;
     }
+    .first-div-wrapper, .second-div-wrapper{
+        max-width: 35vw;
+        margin: 5% 5% 5% 0%;
+    }
+    .second-div-wrapper{
+        margin-left: 2%;
+    }
+     .first-div-wrapper p, .second-div-wrapper p{
+        min-height: 200px;
+        
+        
+    }
+        .button-style{
+        max-width: 35vw;
+        min-height: 50px;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    main{
+        margin: 5% 10% 5% 10%;
+    }
+  
+ 
+   
 }
