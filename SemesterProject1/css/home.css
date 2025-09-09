@@ -1,215 +1,110 @@
-
-
-.home-page-picture1{
-    width: 186px;
-    height: 139px;
- 
-}
-.home-page-picture2{
-    width: 186px;
-    height: 137px;
-    margin-right: 10px;
-    margin-top: 20px;
-    
-}
-.home-page-picture3{
-    width: 170px;
-    height: auto;
-    margin-left: 20%;
-  
-}
-
-
 .main-page-header{
-    width: 190px;
+   
+    text-align: center;
 
 }
 .main-page-header::first-letter{
     color: var(--dark-orange-color)
 }
-.main-page-second-header{
-    font-size: var(--font-size-20);
-    font-family: var(--poppins-font);
-    font-weight: 100;
-    max-width: 70vw;
-   
-}
-.p{
- font-family: var(--poppins-font);
- font-size: var(--font-size-16);
- color: black;
-}
-.home-page-first-p{
-   
-    width: 170px;
-    margin-left: 10%;
-}
-.home-page-second-p{
-    width: 170px;
-    color: white;
-    
+.bug-picture{
+    max-width: 92vw;
+    max-height: auto;
+    margin-left: 0;
 
+}
+h2, h3, h4{
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: poppins;
+    font-size: var(--font-size-20);
+}
+h3{
+    text-align: center;
+}
+main p{
+    margin: 50px 0px;
+}
+.mammoth-picture{
+     max-width: 92vw;
+}
+
+.home-page-picture3{
+     max-width: 92vw;
+     
 }
 
 .button-style{
     font-family: var(--baloo-font);
-    width: 183px;
+    width: 70vw;
     height: var(--button-height-mobile);
     color:white;
     text-transform: uppercase;
     font-size: var(--font-size-16);
     border-radius: var(--frame-radius);
+    margin-bottom: 50px;
+    margin-left: 10%;
 }
 
 
 .button-style:hover{
-    background-color: var(--dark-orange-color);
+    background-color: black;
+    box-shadow: inset 5px 5px 5px var(--purple-color);
+    transform: scale(1.2);
 }
-
 .opening-wrapper{
     background-color: #d9d9d9;
     color: black;
-    width: 303px;
-    height: 305px;
+    width: 92vw;
+    height: auto;
     border-radius: var(--frame-radius);
-    padding: 10px;
+    padding: 10px; 
+    text-align: center;
+    margin-bottom: 50px;
 }
-h4{
-    font-size: var(--font-size-16);
-    text-transform: uppercase;
-}
-.days{
-    font-size: var(--font-size-15);
-    line-height: 0;
-}
-.tiny-info{
-    margin-top:30px;
-    
-}
-
-
-
-
-
-@media (min-width:600px) {
-
-.home-page-picture1{
-    width: 230px;
-    height: auto;
-    position: relative;
-    margin-top: 10px;
-    left: 30%;
- 
-}
-.home-page-picture2{
-    width: 250px;
-    height: auto;
-   
-    
-}
-.home-page-picture3{
-    width: 170px;
-    height: auto;
-    margin-left: 15px;
-    position: relative;
-    left: 10%;
-  
-}
-.main-page-second-header{
-    font-size: 25px;
-    font-weight: 100;
-    width: 90%;
-   
-}
-
-.home-page-first-p{
-    width: 50%;
-    padding-left: 10%;
-     font-size: var(--font-size-20);
-}
-.home-page-second-p{
-     width: 50%;
-    color: white;
-     font-size: var(--font-size-20);
-
-}
-.exh-btn{
-    position: relative;
-    left: 50%;
-  
-   
-}
-.event-btn{
-    position: relative;
-    
-    left:10%;
-}
-.button-style{
-   
-    width: 300px;
-    height: var(--button-height-desktop);
-    font-size: var(--font-size-24);
-
-}
-.main-section h3{
-    font-size: var(--font-size-24);
-    
-}
-
 
 .days{
-    font-size: var(--font-size-20);
-    line-height: 0;
-}
-.tiny-info{
-    margin-top:30px;
-   
+    margin: 0px 0px;
 }
 
-
-
-
-}
-@media (min-width:750px) {
-
-    .info-wrapper{
-        position: absolute;
-        left: 50%;
-        height: 300px;
-        width: auto;
-        border: var(--green-color) var(--picture-frame-size) solid;
-        border-radius: var(--frame-radius);
-        background-image: url('../images/billetto-editorial-334686.jpg');
-        background-size: cover;
-        background-color: rgba(255, 255, 255, 0.7); 
-        background-blend-mode: lighten; 
-        font-size: var(--font-size-20);
-        margin-right: 10%;
-        padding: 10px;
-        
+@media (min-width:750px){
+    .home-page-div-wrapper{
+        display: flex;
+        flex-direction: row;
     }
-
-}
-@media (min-width:1100px) {
-
-    .info-wrapper{
-       
-        left: 40%;
-        height: 300px;
+    .first-div-wrapper, .second-div-wrapper{
         max-width: 40vw;
-      
+        margin: 3%;
+    }
+    .first-div-wrapper p, .second-div-wrapper p{
+        min-height: 200px;
         
     }
+    .mammoth-picture{
+     max-width: 100%;
+}
+
+    .home-page-picture3{
+        max-width: 100%;
+        
+    }
+    .button-style{
+        max-width: 40vw;
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
     .opening-wrapper{
-       margin-left: 10%;
+        max-width: 50vw;
+        margin-left: 20%;
+    }
+    .bug-picture{
+        width: 85vw;
+        
 
     }
-    .main-section h3{
-    
-    margin-left: 10%;
 }
-   
-}
-
-
-

@@ -6,7 +6,7 @@
     <meta name="description" content="Welcome to The Community Science Museum. We make science accessible to all! " />
     <link rel="icon" type="image/png" sizes="32x32" href="SemesterProject1/icons/cms-logo-small.png">
     <link rel="stylesheet" href="SemesterProject1/css/main.css">
-    <link rel="stylesheet" href="SemesterProject1/css/home.css">
+    <link rel="stylesheet" href="SemesterProject1/css/home2.css">
     <title>Home page - Community Science Museum </title>
 </head>
 <body>
@@ -37,44 +37,54 @@
 
     <main>
 
-        <section> 
+        <section class="main-section" > 
+            <div class="flex-container">
             <h1 class="blue-color main-page-header">explore together!</h1>
-            <h2> Come join us at the Community Science Museum where we’re committed to making science accessible to all. </h2>
-            <img class="border-style-orange bug-picture" src="SemesterProject1/images/genoa-956405_1920.jpg" alt="statue of two big black ants at the world of insects at the museum.">
-            
+            <img class="border-style-orange home-page-picture1" src="SemesterProject1/images/genoa-956405_1920.jpg" alt="statue of two big black ants at the world of insects at the museum.">
+            </div>
+
+            <h2 class="main-page-second-header"> Come join us at the Community Science Museum where we’re committed to making science accessible to all. </h2>
+           
+        
+
+        </section>
+        <section  class="main-section"> 
+            <div class="flex-container">
+                <img  class="border-style-green home-page-picture2" src="SemesterProject1/images/mammoth-1257288_1920.jpg" alt="A grand display of a mammoth skeleton.">
+                <p class="home-page-first-p">Over the course of human history, science has developed from our early understanding of 
+                    fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+             </div>
+            <button class="background-color-green button-style exh-btn">
+                <a class="btn-link" href="./exhibitions.html" title="explore more of our exhibtions"> to exhibitions</a>
+
+                </button>
         </section>
 
-            <div class="home-page-div-wrapper">
-                <div class="first-div-wrapper"> 
-                        <p>Over the course of human history, science has developed from our early understanding of 
-                        fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                    
-                        <button class="background-color-green button-style">
-                        <a class="btn-link" href="./exhibitions.html" title="explore more of our exhibtions"> our exhibitions</a>
-                    </button>       
-                    <img  class="border-style-green mammoth-picture" src="SemesterProject1/images/mammoth-1257288_1920.jpg" alt="A grand display of a mammoth skeleton.">        
-                </div>
 
-
-                <div class="second-div-wrapper">    
-                        <p>The aim of our museum is to create a space where everyone can 
-                            experience the wonders of our discoveries and perhaps even 
-                            ignite a lifelong passion to continue the exploration of the world around us.</p>
-                        <button class="background-color-blue button-style event-btn ">
-                            <a class="btn-link" href="events.html" title="look at our events">our events</a>
-                        </button>
-                        <img class="border-style-blue home-page-picture3" src="SemesterProject1/images/billetto-editorial-334686.jpg" alt="A red-toned image of a youth immersed in virtual reality with a headset and headphones. ">
-                </div>
+        <section  class="main-section"> 
+            <div class="flex-container">
+                <p class="home-page-second-p">The aim of our museum is to create a space where everyone can 
+                    experience the wonders of our discoveries and perhaps even 
+                    ignite a lifelong passion to continue the exploration of the world around us.</p>
+            <img class="border-style-blue home-page-picture3" src="SemesterProject1/images/samuel-zeller-158996.jpg" alt="A red-toned image of a youth immersed in virtual reality with a headset and headphones. ">
+                
             </div>
+            <button class="background-color-blue button-style event-btn "><a class="btn-link" href="events.html" title="look at our events">to events</a></button>
 
-        <section>
+        </section>
+
+
+        <section class="main-section">
              <h3>Price and opening hours</h3>
-             <div>
-                <p>The entrance is free for all.  There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
-                <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+               <!-- infodiv -->
+             <div class="info-wrapper">
+               
+                    <p>The entrance is free for all.  There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
+                    <p class="tiny-info">If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+             
             </div>
 
-            <div class="opening-wrapper border-style-red">
+            <div class="opening-wrapper">
                 <h4>opening hours</h4>
                 <p class="days">Monday: Closed</p>
                 <p class="days">Tuesday: 10:00 - 16:00</p>
@@ -83,7 +93,7 @@
                 <p class="days">Friday: 10:00 - 19:00</p>
                 <p class="days">Saturday: 9:00 - 16:00</p>
                 <p class="days">Sunday: 9:00 - 13:00</p>
-                <p> For more info please hit the visit us button</p>
+                <p class="tiny-info"> For more info please hit the visit us button</p>
                 <button class="background-color-orange button-style btn-opening"><a class="btn-link" href="visit.html" title="visit us page with more practical information">visit us</a></button>
             </div>
 
