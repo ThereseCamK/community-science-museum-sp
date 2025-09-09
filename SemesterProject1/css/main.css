@@ -315,7 +315,7 @@ nav {
 
 main{
     grid-area: main;
-    padding: 10px;
+    padding: 5%;
 
 }
 .flex-container{
@@ -326,6 +326,10 @@ main{
 
 .main-section{
   padding-bottom: 40px;
+}
+.title{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 @property --glow-deg {
   syntax: "<angle>";
@@ -375,16 +379,20 @@ main{
   margin-block: 3rem;
   padding: 5rem 3rem;
   max-width: 80ch;
+  max-height: 200px;
   border: var(--border-width, 3px) solid transparent;
   border-left: 0;
   border-radius: 0 100vw 100vw 0;
   background: linear-gradient(var(--surface, canvas) 0 0) padding-box,
     conic-gradient(from var(--glow-deg), var(--gradient-glow)) border-box;
-
+    text-align: left;
   position: relative;
   isolation: isolate;
-
+  overflow: scroll;
   animation: glow 10s infinite linear;
+}
+.glowing-border::-webkit-scrollbar{
+    display: none;
 }
 
 @keyframes glow {
@@ -422,9 +430,14 @@ main{
   border-radius: 100vw 0 0 100vw;
   border: var(--border-width, 3px) solid transparent;
   border-right: 0;
+    text-align: right;
   &::before {
     transform-origin: left;
   }
+}
+.gallery-wrapper img{
+    max-width: 50vw;
+    height: auto;
 }
 
 
@@ -544,6 +557,9 @@ footer{
         padding: 5px 1%;
         font-size: var(--font-size-18);
  
+    }
+    .hide-desktop{
+        display: none;
     }
    
     .hamburger-icon{
@@ -683,18 +699,29 @@ footer{
 }
 
 @media (max-width: 400px) {
+    .hide-desktop{
+        display: block;
+    }
    .home-page-picture1, .home-page-picture2, .home-page-picture3, .section-picture, .grid-pic{
      display: none;
    }
+   .section-title{
+    text-align: inherit;
+   }
+   .glowing-border{
+    padding: 1rem;
+    max-height: 300px;
+
+   }
    .grid-section{
-    height: 340px;    
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    height: 540px;    
+   
+    grid-template-columns: 0.5fr 2fr;
+    
     grid-template-areas: 'title title'
                             'info info'
                             ;
-}
+    }
  
 
    

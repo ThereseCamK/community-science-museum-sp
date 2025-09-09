@@ -7,7 +7,7 @@
 }
 
 .bug-picture{
-    max-width: 92vw;
+    max-width: 80vw;
     height: 300px;
     margin-left: 0;
     background-image: url('../images/genoa-956405_1920.jpg');
@@ -19,11 +19,11 @@ main p{
     margin: 50px 0px;
 }
 .mammoth-picture{
-     max-width: 92vw;
+     max-width: 80vw;
 }
 
 .home-page-picture3{
-     max-width: 92vw;
+     max-width: 80vw;
      
 }
 
@@ -36,7 +36,10 @@ main p{
     font-size: var(--font-size-16);
     border-radius: var(--frame-radius);
     margin-bottom: 50px;
-    margin-left: 10%;
+    
+}
+.first-div-wrapper button, .second-div-wrapper button{
+    margin-left:10%;
 }
 
 
@@ -48,7 +51,7 @@ main p{
 .opening-wrapper{
     background-color: #d9d9d9;
     color: black;
-    width: 92vw;
+    max-width: 80vw;
     height: auto;
     border-radius: var(--frame-radius);
     padding: 10px; 
@@ -73,6 +76,9 @@ main p{
         min-height: 250px;
         
     }
+    .first-div-wrapper button, .second-div-wrapper button{
+    margin-left:0%;
+}
     .mammoth-picture{
      max-width: 100%;
 }
@@ -95,13 +101,16 @@ main p{
     .price-wrapper p{
         margin: 3%;
     }
+    .opening-wrapper{
+        margin: 10%;
+    }
 }
 
 @media (min-width: 1000px) {
 
     .opening-wrapper{
         max-width: 50vw;
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .bug-picture{
         width: 75vw;
