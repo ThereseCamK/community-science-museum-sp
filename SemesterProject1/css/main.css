@@ -204,13 +204,19 @@ p{
     text-transform: uppercase;
     font-size: var(--font-size-20);
     text-align: center;
+    
 }
 .section-info{
     grid-area: info;
+    position: relative;
+    top:-70px;
     font-size: var(--font-size-18);
-    overflow:scroll;
-
     padding: 15px;
+    overflow: scroll;
+    height: 200px;
+}
+.section-info::-webkit-scrollbar{
+    visibility: hidden;
 }
 
 
@@ -377,9 +383,9 @@ main{
   --gradient-glow: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4),
     var(--clr-5), var(--clr-1);
   margin-block: 3rem;
-  padding: 5rem 3rem;
+  padding: 2rem 2rem;
   max-width: 80ch;
-  max-height: 200px;
+  min-height: 200px;
   border: var(--border-width, 3px) solid transparent;
   border-left: 0;
   border-radius: 0 100vw 100vw 0;
@@ -388,12 +394,10 @@ main{
     text-align: left;
   position: relative;
   isolation: isolate;
-  overflow: scroll;
+  
   animation: glow 10s infinite linear;
 }
-.glowing-border::-webkit-scrollbar{
-    display: none;
-}
+
 
 @keyframes glow {
   100% {
@@ -436,9 +440,131 @@ main{
   }
 }
 .gallery-wrapper img{
-    max-width: 50vw;
+    max-width: 90vw;
+    height: auto;
+    
+}
+.gallery-wrapper p{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+/*visit*/
+.section-header-visit{
+    max-width: 90vw;
+   text-align: center;
+}
+
+
+.astronaut-img{
+  
+    max-width: 90%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+
+.opening-wrapper{
+    background-color: #d9d9d9;
+    max-width: 100%;
+    height: 300px;
+    border-radius: var(--frame-radius);
+    padding: 10px;
+    text-align: center;
+    margin: 10%;
+}
+h4{
+    font-size: var(--font-size-16);
+    text-transform: uppercase;
+}
+
+
+.left-txt-wrap{
+    text-align: left;
+    max-width: 60vw;
+    margin-bottom: 50px;
+}
+.right-txt-wrap{
+    text-align: right;
+    padding-left: 30vw;
+    margin-bottom: 50px;
+    
+}
+
+.price-section{
+    margin: 5%;
+   }
+.info-wrap{
+    margin: 5%;
+}
+
+.sceleton-img{
+    max-width: 80vw;
     height: auto;
 }
+
+/*home page*/
+.bug-picture{
+    max-width: 90vw;
+    height: 300px;
+    margin-left: 0;
+    background-image: url('../images/genoa-956405_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main p{
+    margin: 50px 0px;
+}
+.mammoth-picture{
+     max-width: 90vw;
+}
+
+.home-page-picture3{
+     max-width: 90vw;
+     
+}
+
+.button-style{
+    font-family: var(--baloo-font);
+    width: 65vw;
+    height: var(--button-height-mobile);
+    color:white;
+    text-transform: uppercase;
+    font-size: var(--font-size-16);
+    border-radius: var(--frame-radius);
+    margin-bottom: 50px;
+    
+}
+.first-div-wrapper button, .second-div-wrapper button{
+    margin-left:10%;
+}
+
+
+.button-style:hover{
+    background-color: black;
+    box-shadow: inset 5px 5px 5px var(--purple-color);
+    transform: scale(1.05);
+}
+.opening-wrapper{
+    background-color: #d9d9d9;
+    color: black;
+    max-width: 80vw;
+    height: auto;
+    border-radius: var(--frame-radius);
+    padding: 10px; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.days{
+    margin: 0px 0px;
+}
+
+
+
 
 
 
@@ -504,6 +630,43 @@ footer{
 .some-wrap img{
     height: auto;
     width: 50px;
+}
+.gallery-link{
+    margin-top: 20px;
+}
+
+/*get involved*/
+.img-involved{
+    max-width: 100%;
+    height: auto;
+    animation: opacity-move 5s infinite;
+    border-radius: var(--frame-radius);
+} 
+@keyframes opacity-move{
+    25%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+     50%{
+        opacity: 0.5; 
+        transform: scale(0.7);
+    }
+    
+}
+
+.museum-img{
+    background-image: url('../images/scott-webb-102825.jpg');
+    max-width: 100%;
+    border-radius: var(--frame-radius);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+
 }
 
 
@@ -582,15 +745,87 @@ footer{
     }
 
     .contact-info-wrap{
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        'footer-address footer-contact footer-some'
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            'footer-address footer-contact footer-some'
        
     }
+    .gallery-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .gallery-flex{
+        flex: 1 0 40%;
+        max-width: 40vw;
+        height: auto;
+    
+    }
+    .gallery-flex img{
+        max-width: 40vw;
+    }
 
+    /*visit*/
+        .price-section{
+        margin: 10%;
+    }
+    
+    .astronaut-img{
+        max-width: 300px;
+        height: auto;
+    }
 
+    .info-wrap{
+        margin: 10%;
+    }
+       .opening-wrapper{
+        height: 350px;
+        max-width: 50%;
+        margin: 0% 20% 0% 20%;
+    }
 
+    /*home page*/
+     .home-page-div-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .first-div-wrapper, .second-div-wrapper{
+        max-width: 40vw;
+        margin: 0 3%;
+    }
+    .first-div-wrapper p, .second-div-wrapper p{
+        min-height: 250px;
+        
+    }
+    .first-div-wrapper button, .second-div-wrapper button{
+    margin-left:0%;
+}
+    .mammoth-picture{
+     max-width: 100%;
+}
+
+    .home-page-picture3{
+        max-width: 100%;
+        
+    }
+    .button-style{
+        max-width: 40vw;
+        min-height: 50px;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .bug-picture{
+        width: 85vw;
+        
+
+    }
+    .price-wrapper p{
+        margin: 3%;
+    }
+    .opening-wrapper{
+        margin: 10%;
+    }
 
 }
 
@@ -655,7 +890,52 @@ footer{
         width: 70px;
         height: 70px;
     }
-   
+    .gallery-wrapper{
+        gap: 10%;
+    }
+    .gallery-flex{
+        flex: 1 0 50%;
+        max-width: 30vw;
+    }
+
+    .gallery-flex img{
+        max-width: 30vw;
+    }
+   /*get involved*/
+     .museum-img{
+        max-width: 80%;
+        margin: 10%;
+   }
+
+   /*home page*/
+       .opening-wrapper{
+        max-width: 50vw;
+        margin-left: 15%;
+    }
+    .bug-picture{
+        width: 75vw;
+    }
+    .first-div-wrapper, .second-div-wrapper{
+        max-width: 35vw;
+        margin: 5% 5% 5% 0%;
+    }
+    .second-div-wrapper{
+        margin-left: 2%;
+    }
+     .first-div-wrapper p, .second-div-wrapper p{
+        min-height: 200px;
+        
+        
+    }
+        .button-style{
+        max-width: 35vw;
+        min-height: 50px;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    main{
+        margin: 5% 10% 5% 10%;
+    }
 
 }
 @media (min-width:1100px) {
@@ -681,6 +961,27 @@ footer{
     .navbar-item{
         font-size: var(--font-size-20);
     }
+    /*visit*/
+        p{
+        font-size: var(--font-size-18);
+    }
+    .location-wrapper h2{
+        font-size: 26px;
+    }
+    .location-wrapper address{
+        font-size: var(--font-size-20);
+    }
+
+     .astronaut-img{
+        max-width: 400px;
+        height: auto;
+    }
+
+       .sceleton-img{
+
+        max-width: 60vw;
+     
+    }
   
    
 }
@@ -702,7 +1003,7 @@ footer{
     .hide-desktop{
         display: block;
     }
-   .home-page-picture1, .home-page-picture2, .home-page-picture3, .section-picture, .grid-pic{
+    .section-picture, .grid-pic{
      display: none;
    }
    .section-title{
@@ -710,8 +1011,12 @@ footer{
    }
    .glowing-border{
     padding: 1rem;
-    max-height: 300px;
+    min-height: 250px;
+    border-radius: 0;
 
+   }
+   .glowing-border.right.right{
+    border-radius: 0;
    }
    .grid-section{
     height: 540px;    
@@ -722,7 +1027,37 @@ footer{
                             'info info'
                             ;
     }
+    .button-style{
+        max-width: 50vw;
+    }
  
 
    
+}
+@media (max-width:300px) {
+    main img, .bug-picture{
+        display: none;
+    }
+    .logo-img{
+        left:35%;
+    }
+    .logo-txt{
+        left: 50%;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+    .contact-info-wrap{
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      'footer-address footer-address'
+        'footer-contact footer-contact'
+      
+        'footer-some footer-some';
+        text-align: center;
+    }
+  
+    
 }

@@ -6,44 +6,20 @@
 .main-page-header::first-letter{
     color: var(--red-color)
 }
-
-.img-involved{
-    max-width: 100%;
-    height: auto;
-    animation: opacity-move 5s infinite;
-    border-radius: var(--frame-radius);
-} 
-@keyframes opacity-move{
-    25%{
-        opacity: 0.5;
-        transform: scale(0.5);
-    }
-    50%{
-        opacity: 0;
-        transform: scale(0.3);
-    }
-     50%{
-        opacity: 0.5; 
-        transform: scale(0.7);
-    }
-    
+.section-info{
+    top: 0px;
+    height: 230px;
+    grid-area: auto;
+}
+.glowing-border{
+    padding: 1px;
+    min-height: 250px;
+    border-radius:0;
+}
+.glowing-border.right{
+    border-radius:0;
 }
 
-.museum-img{
-    background-image: url('../images/scott-webb-102825.jpg');
-    max-width: 100%;
-    border-radius: var(--frame-radius);
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
 
-}
-@media (min-width:1000px) {
-   .museum-img{
-    max-width: 80%;
-    margin: 10%;
-   }
-}
 
 

@@ -19,9 +19,8 @@
     -webkit-text-stroke-width:0.5px ;
   
 }
-h2{
-    text-transform: uppercase;
-}
+
+
 
 /*cards*/
 @media (min-width: 350px){
@@ -36,6 +35,7 @@ h2{
     left:0%;
     perspective: 800px;
     margin-bottom: 10%;
+    
     
 }
 
@@ -179,10 +179,12 @@ footer{
 
 
 
-@media (min-width:650px) {
-    .container h2{
+@media (min-width:550px) {
+    h2{
         text-align: center;
+        margin-top: 10%;
     }
+  
     .container-res {
         margin: 0 1%;
        
@@ -196,26 +198,26 @@ footer{
        
     }
     .card-res {
-      left: 40%;
-
-    }
-     .card-kids {
       left: 20%;
 
     }
+     .card-kids {
+      left: 12%;
+
+    }
      .card-teacher {
-      left: 40%;
+      left: 20%;
 
     }
     .front-res,
     .back-res {
-         left: 40%;
+    left: 20%;
     height: 100%;
     width: 100%;  
     }
     .front-teacher,
     .back-teacher {
-    left: 40%;
+    left: 20%;
     height: 100%;
     width: 100%;  
     }
@@ -223,14 +225,26 @@ footer{
     .back-kids {
     left: 20%;
     min-height: 530px;
-    min-width: 90%;  
+    min-width: 110%;  
     }
 
+}
+@media (min-width:700px){
+    .card-kids{
+        left: 20%;
+    }
+   .card-teacher {
+      left: 50%;
+
+    }
+    .card-res{
+        left:50%;
+    }
 }
 @media (min-width:1000px) {
     .cards{
         flex-direction: row;
-        margin-left: -2%;
+        margin-left: -15%;
         max-width: 100%;  
     }
     .container-res {
@@ -279,7 +293,10 @@ footer{
 }
 
 @media (min-width:1300px) {
- 
+     .cards{
+
+        margin-left: -10%;
+    }
     .container-res {
         margin: 0 5%;
        
