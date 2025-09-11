@@ -586,7 +586,7 @@ footer{
 .maps-link{
     font-size: 10px;
 }
-.header-footer{
+.footer-header h1{
     margin-top: 2%;
     color: var(--blue-color);
     font-size: var(--font-size-20);
@@ -781,7 +781,7 @@ footer{
         margin: 10%;
     }
        .opening-wrapper{
-        height: 350px;
+       
         max-width: 50%;
         margin: 0% 20% 0% 20%;
     }
