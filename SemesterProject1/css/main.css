@@ -336,6 +336,7 @@ main{
 .title{
     text-transform: uppercase;
     text-decoration: underline;
+    font-size: 1.22rem;
 }
 @property --glow-deg {
   syntax: "<angle>";
@@ -641,6 +642,7 @@ footer{
     max-width: 100%;
     height: auto;
     animation: opacity-move 5s infinite;
+    animation-iteration-count: 1;
     border-radius: var(--frame-radius);
 } 
 @keyframes opacity-move{
@@ -946,15 +948,20 @@ footer{
     }
     
     .grid-section{
-        height: 350px;    
-        width: 45%;
+        height: 450px;    
+        min-width: 55%;
+        
  
+    }
+    .glowing-border.right img{
+        margin-left: 50px;
     }
     .section-title{
         font-size: var(--font-size-24)
     }
     .section-info{
         font-size: var(--font-size-18);
+        min-height: 230px;
     }
     .section-info::-webkit-scrollbar{
         display: none;

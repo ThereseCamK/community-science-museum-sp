@@ -1,0 +1,16 @@
+  .privacy-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .school-project-disclaimer {
+            background-color: #feebc8;
+            border-left: 4px solid #ed8936;
+            color: #744210;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .privacy-section-title {
+            margin-top: 30px;
+        }
